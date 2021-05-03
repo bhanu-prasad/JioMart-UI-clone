@@ -1,7 +1,14 @@
+function dummy(){
+    document.getElementById("dummy").className="dummy-scroll";
+}
+function nondummy(){
+    document.getElementById("dummy").className="";
+}
 $(document).ready(function () {
     $('#dismiss, .overlay').on('click', function () {
         $('#sidebar').removeClass('active');
         $('.overlay').removeClass('active');
+        nondummy();
     });
 
     $('#sidebarCollapse').on('click', function () {
@@ -9,11 +16,10 @@ $(document).ready(function () {
         $('.overlay').addClass('active');
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        dummy();
     });
-
-
-
 });
+
 
 document.addEventListener("DOMContentLoaded", function(){
 // make it as accordion for smaller screens

@@ -15,6 +15,11 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="tea/style.css">
+  <style>
+    .dummy-scroll{
+      overflow-y: hidden;
+    }
+  </style>
 </head>
 <header class="fixed-top">
     <div class="wrapper">
@@ -232,7 +237,7 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </header>
-<body>
+<body id="dummy">
     <div class="container" style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
         <img src="emptycart.svg" style="width: 225px;height: 165px;"alt="">
         <h3>Your Cart is empty!</h3>

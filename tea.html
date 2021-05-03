@@ -25,7 +25,11 @@
      
      <link rel="stylesheet" href="tea/style.css">
      <link rel="stylesheet" href="./tea/tea.css">
-     
+     <style>
+        .dummy-scroll{
+          overflow-y: hidden;
+        }
+      </style>
 </head>
 <header class="fixed-top">
     <div class="wrapper">
@@ -34,7 +38,7 @@
             <div id="dismiss">
                 <i class="fas fa-times fa-2x"></i>
             </div>
-
+  
             <div class="sidebar-header"  >
                 <div class="row">
                 <ul style="list-style: none;" class="d-flex">
@@ -49,7 +53,7 @@
                 </ul>     
                 </div>  
             </div>
-
+  
             <ul class="list-unstyled components" style="overflow-y: scroll; height: 600px;">
                 <a href="index.html"><p>Home</p></a>
                 <a href="categories.html"><p>Shop by category</p></a>
@@ -82,7 +86,7 @@
         
         <!-- Page Content  -->
         <div id="content" class="mb-5 navbar-css "  >
-
+  
             <nav class="navbar navbar1 navbar-expand-lg navbar-dark bg-primary ">
                 <div class="container-fluid p-auto mx-auto">
                     
@@ -101,7 +105,7 @@
                         <input class="form-control mx-3 " type="search" placeholder="Search essentials, groceries and more..." aria-label="Search">
                       </form>
             
-
+  
                     <div class="collapse hide navbar-collapse ml-5 home-nav" id="navbarSupportedContent" >
                         <ul class="nav navbar-nav mx-4 ">
                             <li class="nav-item me-3 me-lg-0 ">
@@ -166,7 +170,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" data-bs-toggle="dropdown">  Snacks & Branded Foods  </a>
+                            <a class="nav-link  dropdown-toggle"data-bs-toggle="dropdown">  Snacks & Branded Foods  </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item"> Biscuits & Cookies</a></li>
                             <li><a class="dropdown-item"> Noodle, Pasta, Vermicelli </a></li>
@@ -216,7 +220,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle"data-bs-toggle="dropdown">  Baby Care </a>
+                            <a class="nav-link  dropdown-toggle" data-bs-toggle="dropdown">  Baby Care </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item"> Baby Grooming</a></li>
                             <li><a class="dropdown-item"> Baby Bath & Hygiene </a></li>
@@ -232,9 +236,9 @@
   
         </div>
     </div>
-
+  
     <div class="overlay"></div>
-
+  
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
@@ -242,8 +246,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="script.js"></script>
-</header>
-<body>
+  </header>
+<body id="dummy">
     <!--Your Body Goes Here-->
     
 
