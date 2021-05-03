@@ -1,30 +1,17 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="JioMart_logo.svg">
-    <title>Buy Grocery Online | Daily Needs Supermarket - JioMart</title>
-
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Custom CSS -->
-    
-    <!-- Scrollbar Custom CSS -->
-
-    <!-- Font Awesome JS -->
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" 
-    integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
-     integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-     <script src="./login/script.js"></script>
-     <link rel="stylesheet" href="./login/style.css">
-     <link rel="stylesheet" href="./login/loginstyle.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="tea/style.css">
 </head>
-<header class="">
+<header class="fixed-top">
     <div class="wrapper">
         <!-- Sidebar  -->
         <nav id="sidebar" style="height: 100vh; overflow: hidden;" >
@@ -93,7 +80,7 @@
                         text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff">
                         <path d="M0,26.46154v13.23077h172v-13.23077zM0,79.38462v13.23077h172v-13.23077zM0,132.30769v13.23077h172v-13.23077z"></path></g></g></svg>
                     </button>
-                    <a class="navbar-brand"  href="index.html"><img class="nav-logo" style="height: 35px;"  src="https://www.jiomart.com/assets/version1616088859/smartweb/images/jiomart_logo_beta.svg" alt=""></a> 
+                    <a class="navbar-brand"  href="index.html"><img class="nav-logo" src="https://www.jiomart.com/assets/version1616088859/smartweb/images/jiomart_logo_beta.svg" alt=""></a> 
                     <form class="form-inline my-2 my-lg-0 mx-4 " id="navBarSearchForm">
                         <input class="form-control mx-3 " type="search" placeholder="Search essentials, groceries and more..." aria-label="Search">
                       </form>
@@ -163,7 +150,7 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle"  data-bs-toggle="dropdown">  Snacks & Branded Foods  </a>
+                            <a class="nav-link  dropdown-toggle"data-bs-toggle="dropdown">  Snacks & Branded Foods  </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item"> Biscuits & Cookies</a></li>
                             <li><a class="dropdown-item"> Noodle, Pasta, Vermicelli </a></li>
@@ -190,7 +177,7 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Personal Care  </a>
-                            <ul class="dropdown-menu"> 
+                            <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="personalcare.html"> Hair Care</a></li>
                             <li><a class="dropdown-item" href="personalcare.html"> Oral Care </a></li>
                             <li><a class="dropdown-item" href="personalcare.html"> Skin Care </a></li>
@@ -202,8 +189,9 @@
                             <li><a class="dropdown-item" href="personalcare.html"> Health & Wellness </a></li>
                             <li><a class="dropdown-item" href="personalcare.html"> Makeup </a></li>
                             </ul>
+                        </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" data-bs-toggle="dropdown">  Home Care </a>
+                            <a class="nav-link  dropdown-toggle"  data-bs-toggle="dropdown">  Home Care </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item"> Detergents</a></li>
                             <li><a class="dropdown-item"> Dishwash </a></li>
@@ -240,53 +228,11 @@
     <script src="script.js"></script>
 </header>
 <body>
-    <div class="container-fluid ">
-        <div class="lgncont">
-          <div class="mbl ">
-            <img src="login/login-banner.jpg" class="banner" alt="Banner">
-          </div>
-          <div class="form ">
-              <div class="formbd mt-4">
-                <h2>Sign in</h2>
-                <div>
-                  <p class="">Sign in to access your Orders, Offers and Wishlist.</p>
-                  <form action="#">
-                    <div class=" lgnform p-2">
-                      <span style="border-right:1px solid #000;" class="mr-2 pr-2">+91 </span>
-                      <input type="tel"  id="mobile" autofocus onkeypress="return isNumberKey(event)" maxlength="10" placeholder="Enter your mobile no.">
-                      
-                      <script>
-                        function isNumberKey(evt)
-                        {
-                          var charCode = (evt.which) ? evt.which : event.keyCode
-                          if (charCode < 48 || charCode > 57)
-                          return false;
-                        
-                          return true;
-                        }
-                        </script>
-                        
-                    </div>
-                    <span class="text-danger error" id="err"><i>Please enter a valid mobile number!</i><br></span>
-                    <br>
-                    <div class="btnalign">
-                    <button class="btn btn-primary btn1" onclick="validate()" ><i class="fa fa-chevron-right"></i></button>
-                  </div>
-                  </form>
-                </div>
-              </div>
-          </div>
-          
-      </div>
-      
-  
-      </div>
+    <div class="container" style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
+        <img src="emptycart.svg" style="width: 225px;height: 165px;"alt="">
+        <h3>Your Cart is empty!</h3>
+        <p>You have no items added in cart</p>
+        <button class="btn btn-primary mt-3">Add Products</button>
+    </div>
 </body>
-<!--Footer Start-->
-<footer class="text-center footer  fixed-bottom">
-  
-    <p class="m-0 cpyrt">By continuing you agree to our <a href="#" class="text-danger">Terms of service</a><br>
-      and <a href="#" class="text-danger">Privacy & Legal Policy.</a></p>
-  </footer>
 </html>
-<script src="login/validation.js"></script>
