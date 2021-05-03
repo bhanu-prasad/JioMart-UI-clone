@@ -1,7 +1,15 @@
+function hide(){
+    document.getElementById("footerhide").className="text-center footer  fixed-bottom f-hide";
+    return;
+}
+function  visable(){
+    document.getElementById("footerhide").className="text-center footer  fixed-bottom";
+}
 $(document).ready(function () {
     $('#dismiss, .overlay').on('click', function () {
         $('#sidebar').removeClass('active');
         $('.overlay').removeClass('active');
+        visable();
     });
 
     $('#sidebarCollapse').on('click', function () {
@@ -9,6 +17,7 @@ $(document).ready(function () {
         $('.overlay').addClass('active');
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+        hide();
     });
 });
 
