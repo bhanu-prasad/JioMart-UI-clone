@@ -164,4 +164,8 @@ font-size: 14px;
         padding: 0px 10px;
     }
   }
-  
+  .product-buy {
+    position: absolute;
+    bottom: 5px;
+    width: 205px;
+   }
