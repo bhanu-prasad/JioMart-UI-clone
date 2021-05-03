@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <link rel="icon" href="JioMart_logo.svg">
     <title>Buy Grocery Online | Daily Needs Supermarket - JioMart</title>
 
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    
     <!-- Scrollbar Custom CSS -->
 
     <!-- Font Awesome JS -->
@@ -19,19 +19,19 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
      integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
      <script src="script.js"></script>
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="footer/footerstyle.css">
 
 </head>
-
-<body>
-
+<header class="fixed-top">
     <div class="wrapper">
         <!-- Sidebar  -->
-        <nav id="sidebar" style="height: 100vh; overflow: hidden;">
+        <nav id="sidebar" style="height: 100vh; overflow: hidden;" >
             <div id="dismiss">
                 <i class="fas fa-times fa-2x"></i>
             </div>
 
-            <div class="sidebar-header" >
+            <div class="sidebar-header"  >
                 <div class="row">
                 <ul style="list-style: none;" class="d-flex">
                     <li><img src="./navimgs/user.png" height="22px" width="22px" class="mr-2"></li>
@@ -39,9 +39,9 @@
                 </ul> 
                 </div>  
                 <div class="row">  
-                <ul style="list-style: none;" class="d-flex">
-                    <button type="button">Account</button>
-                    <button type="button">Orders</button>
+                <ul style="list-style: none;" class="d-flex ">
+                    <button type="button" ><a href="login.html">Account</a></button>
+                    <button type="button"><a href="#">Orders</a></button>
                 </ul>     
                 </div>  
             </div>
@@ -59,25 +59,27 @@
                 <a href="#"><p>Need Help</p></a>
                 <a href="#"><p>Guide</p></a>
                 <hr style="border-top: 5px solid #D5DBDB">
-                <b><p style="font-size: 14px; font-weight: bolder;">CONTACT US</p></b>
-                <p style="font-size: 12px;">WhatsApp us : <a href="#"style="text-decoration: underline; color: #008ECC" >70003 70003</a></p>
-                <p style="font-size: 12px;">Call Us : <a href="#" style="text-decoration: underline; color: #008ECC">1800 890 1222</a></p>
-                <p style="font-size: 12px;">Please note that you are accessing the BETA Version of www.jiomart.com</p>
-                <p style="font-size: 12px;">Should you encounter any bugs, glitches, lack of functionality, 
-                delayed deliveries, billing errors or other problems on the beta website, please email us on
-                 <a href="#" style="text-decoration: underline; color: #008ECC">cs@jiomart.com</a></p>
-                <p style="font-size: 14px; font-weight: bolder;">DOWNLOAD APP</p>
-                <div class="ml-2 pl-2">
-                    <span><a href="#"><img src="./navimgs/play_store.png" alt=""></a></span>
-                    <span><a href="#"><img src="./navimgs/ios_store.png" alt=""></a></span>
-                </div>
+                    <div class="mb-5 pb-3">
+                        <b><p style="font-size: 14px; font-weight: bolder;">CONTACT US</p></b>
+                    <p style="font-size: 12px;">WhatsApp us : <a href="#"style="text-decoration: underline; color: #008ECC" >70003 70003</a></p>
+                    <p style="font-size: 12px;">Call Us : <a href="#" style="text-decoration: underline; color: #008ECC">1800 890 1222</a></p>
+                    <p style="font-size: 12px;">Please note that you are accessing the BETA Version of www.jiomart.com</p>
+                    <p style="font-size: 12px;">Should you encounter any bugs, glitches, lack of functionality, 
+                    delayed deliveries, billing errors or other problems on the beta website, please email us on
+                    <a href="#" style="text-decoration: underline; color: #008ECC">cs@jiomart.com</a></p>
+                    <p style="font-size: 14px; font-weight: bolder;">DOWNLOAD APP</p>
+                    <div class="ml-2 pl-2 mb-5">
+                        <span><a href="#"><img src="./navimgs/play_store.png" alt=""></a></span>
+                        <span><a href="#"><img src="./navimgs/ios_store.png" alt=""></a></span>
+                    </div>
+                    </div>
             </ul class="contact-info">
         </nav>
         
         <!-- Page Content  -->
-        <div id="content" >
+        <div id="content" class="mb-5 navbar-css "  >
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+            <nav class="navbar navbar1 navbar-expand-lg navbar-dark bg-primary ">
                 <div class="container-fluid p-auto mx-auto">
                     
                     <button type="button" id="sidebarCollapse" class="btn btn-info mx-md-5 p-auto">
@@ -90,7 +92,7 @@
                         text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff">
                         <path d="M0,26.46154v13.23077h172v-13.23077zM0,79.38462v13.23077h172v-13.23077zM0,132.30769v13.23077h172v-13.23077z"></path></g></g></svg>
                     </button>
-                    <a class="navbar-brand" href="#"><img src="./navimgs/jiomart.png" alt=""></a> 
+                    <a class="navbar-brand" href="#"><img src="https://www.jiomart.com/assets/version1616088859/smartweb/images/jiomart_logo_beta.svg" alt=""></a> 
                     <form class="form-inline my-2 my-lg-0 mx-4" id="navBarSearchForm">
                         <input class="form-control mx-3" type="search" placeholder="Search essentials, groceries and more..." aria-label="Search">
                       </form>
@@ -229,13 +231,113 @@
 
     <div class="overlay"></div>
 
-    <<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+</header>
+<body>
+    <!--Your Body Goes Here-->
+    <div class="main">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc sed blandit libero volutpat sed cras ornare. Nam aliquam sem et tortor consequat id. Elit ut aliquam purus sit amet luctus venenatis. Rhoncus mattis rhoncus urna neque viverra. Molestie a iaculis at erat pellentesque adipiscing commodo elit at. Vitae tempus quam pellentesque nec nam aliquam. Augue ut lectus arcu bibendum at. Integer vitae justo eget magna fermentum iaculis eu non diam. Fames ac turpis egestas sed tempus urna. Ac felis donec et odio pellentesque diam volutpat commodo sed. Tristique senectus et netus et malesuada fames ac turpis. Est ante in nibh mauris cursus mattis molestie. Sagittis aliquam malesuada bibendum arcu. Risus sed vulputate odio ut enim blandit volutpat. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Ac tortor vitae purus faucibus ornare suspendisse sed. Volutpat lacus laoreet non curabitur gravida arcu ac tortor. Tempus urna et pharetra pharetra massa massa. Lectus arcu bibendum at varius vel pharetra vel. Vel pharetra vel turpis nunc eget lorem dolor. Posuere urna nec tincidunt praesent semper feugiat nibh sed. Quis enim lobortis scelerisque fermentum. At elementum eu facilisis sed odio morbi quis. Donec ultrices tincidunt arcu non sodales neque sodales ut. Mollis aliquam ut porttitor leo a diam sollicitudin tempor id. Quis auctor elit sed vulputate mi sit amet. Nunc sed velit dignissim sodales ut eu. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Gravida quis blandit turpis cursus. Id aliquet lectus proin nibh. Volutpat blandit aliquam etiam erat velit scelerisque. Proin nibh nisl condimentum id. Sed adipiscing diam donec adipiscing tristique risus nec feugiat. Augue neque gravida in fermentum et sollicitudin ac. Enim nec dui nunc mattis enim ut. Est velit egestas dui id ornare arcu odio. Id aliquet risus feugiat in ante metus. Non odio euismod lacinia at quis risus. Euismod quis viverra nibh cras pulvinar mattis nunc sed. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Vel pharetra vel turpis nunc eget lorem dolor sed viverra. Nibh praesent tristique magna sit amet purus gravida quis blandit. Faucibus in ornare quam viverra orci sagittis eu volutpat. Cras ornare arcu dui vivamus arcu. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna. Consectetur libero id faucibus nisl tincidunt eget nullam. In est ante in nibh. Leo vel orci porta non pulvinar. Tempor orci dapibus ultrices in iaculis nunc sed augue. Ac odio tempor orci dapibus ultrices in iaculis nunc. At erat pellentesque adipiscing commodo elit at imperdiet. Et ultrices neque ornare aenean euismod elementum nisi. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Quam lacus suspendisse faucibus interdum posuere lorem ipsum. Malesuada pellentesque elit eget gravida cum sociis. Pharetra convallis posuere morbi leo urna. Eget mi proin sed libero enim sed. Ultrices mi tempus imperdiet nulla malesuada pellentesque. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Dictum fusce ut placerat orci nulla pellentesque dignissim. Aliquam faucibus purus in massa tempor nec feugiat. Vitae aliquet nec ullamcorper sit. Morbi blandit cursus risus at ultrices mi. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Eget aliquet nibh praesent tristique. Nulla pellentesque dignissim enim sit amet. Aenean vel elit scelerisque mauris pellentesque. Felis bibendum ut tristique et egestas quis ipsum suspendisse. Sed adipiscing diam donec adipiscing tristique risus. Blandit aliquam etiam erat velit scelerisque in. Sed egestas egestas fringilla phasellus. Sit amet est placerat in. In hendrerit gravida rutrum quisque non. Mauris sit amet massa vitae tortor condimentum lacinia quis vel. At in tellus integer feugiat. Et malesuada fames ac turpis. Pulvinar etiam non quam lacus suspendisse faucibus interdum posuere. Arcu ac tortor dignissim convallis aenean et tortor at risus. Risus in hendrerit gravida rutrum. Donec enim diam vulputate ut. Morbi non arcu risus quis varius quam quisque id. Molestie at elementum eu facilisis sed odio morbi quis. Sollicitudin tempor id eu nisl nunc mi ipsum. Auctor urna nunc id cursus metus aliquam. Leo duis ut diam quam nulla porttitor massa. Mauris in aliquam sem fringilla ut morbi tincidunt augue. Arcu dui vivamus arcu felis bibendum. Pharetra diam sit amet nisl suscipit adipiscing bibendum est. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Nunc eget lorem dolor sed viverra ipsum nunc. Congue eu consequat ac felis donec et odio pellentesque. Placerat duis ultricies lacus sed turpis tincidunt id. Sagittis id consectetur purus ut faucibus pulvinar elementum integer enim. Elementum tempus egestas sed sed. Nunc eget lorem dolor sed viverra ipsum nunc. Ornare aenean euismod elementum nisi. Volutpat lacus laoreet non curabitur gravida.
+    </div>
 </body>
-
+<!--Footer Start-->
+<footer class="jumbotron footer">
+    <div class="footer_container pl-5 pr-5 m-0 row mblr">
+      <!--Footer Content Mostpopular list/ hidded on small screens-->
+        <ul class="col-md-3 pl-5 ml-1 mbl">
+            <li><h2>MOST POPULAR CATEGORIES</h2></li>
+            <li><a href="#">Staples</a></li>
+            <li><a href="#">Bevereges</a></li>
+            <li><a href="#">Personal Care</a></li>
+            <li><a href="#">Home Care</a></li>
+            <li><a href="#">Fruits and Vegetables</a></li>
+            <li><a href="#">Baby Care</a></li>
+            <li><a href="#">Snacks & Branded Foods</a></li>
+            <li><a href="#">Dairy & Bakery</a></li>
+        </ul>
+        <!--Customer Service list-->
+        <ul class="col-md-3 col-5">
+            <li><h2>CUSTOMER SERVICES</h2></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms and conditions</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">E-waste Policy</a></li>
+        </ul>
+        <!--Footer Content Contact Pannel-->
+        <div class="contact col-md-4 col-6 pr-5 mr-1 ">
+            <h2>CONTACT US</h2>
+            WhatsApp us: <span><a href="tel:+91 99999 99999">+91 99999 99999</a></span>
+            <br>
+            <br>
+            Call Us: <span><a href="tel:1800 2222 3333">1800 2222 3333</a></span>
+            <p>6:00 AM to 8:00 PM, 365 days</p>
+            <p>Please note that you are accessing the BETA Version of 
+                <a href="https://www.jiomart.com/">www.jiomart.com</a></p>
+            <p>Should you encounter any bugs, glitches, lack of functionality, 
+                    delayed deliveries, billing errors or other problems on the beta website, 
+                    please email us on 
+                    <a href="mailto:cs@jiomart.com">cs@jiomart.com</a></p>
+            <br class="mbl">
+            <h2 class="mbl">DOWNLOAD APP</h2>
+            <br class="mbl">
+            <a href="#" class="mr-3 mbl" data-toggle="modal" data-target="#download"><img src="footer/play_store.png" alt=""></a>
+            <a href="#" class="mbl" data-toggle="modal" data-target="#download1"><img src="footer/ios_store.png" alt=""></a>
+        </div>
+        
+    </div>
+    <!--Mobile Responive Modal Toogle-->
+    <div class="fs text-center"><a href="#" class="mr-3 " data-toggle="modal" 
+        data-target="#download"><img src="footer/play_store.png" alt=""></a>
+        <a href="#" data-toggle="modal" data-target="#download1"><img src="footer/ios_store.png" alt=""></a></div>
+    <div></div>
+    <!--Footer Copyright-->
+    <div class="fborder mt-3 p-3">
+        <div class="copyright container-md text-left ">
+        <p class="mbl m-0">Best viewed on Microsoft Edge 81+, Mozilla Firefox 75+, Safari 5.1.5+, Google Chrome 80+</p>
+        <span>© 2021 All rights reserved. Reliance Retail Ltd.</span></div>
+    </div>
+    <!--Modals -->
+    <div class="modal" tabindex="-1" id="download" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Download Jio Mart</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <span><img src="footer/play_store.png" alt=""></span>
+            </div>
+            <div class="modal-footer">
+              <a href="https://play.google.com/store/apps/details?id=com.jpl.jiomart" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" tabindex="-1" id="download1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Download Jio Mart</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <span ><img src="footer/ios_store.png" alt=""></span>
+            </div>
+            <div class="modal-footer">
+              <a href="https://apps.apple.com/in/app/jiomart/id1522085683" class="btn btn-primary">Download</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</footer>
 </html>

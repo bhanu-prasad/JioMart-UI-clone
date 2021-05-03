@@ -9,8 +9,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
     font-size: 12px;
+    margin-top: 160px;
 }
-
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
@@ -26,9 +26,29 @@ a:focus {
     text-decoration: none;
     transition: all 0.3s;
 }
-
-#navBarSearchForm input[type=search] {
-    width:50rem;
+@media screen and  (max-width:1149px){
+    
+    #navBarSearchForm input[type=search] {
+        width:25rem;
+    }
+}
+@media screen and  (min-width:1150px){
+    
+    #navBarSearchForm input[type=search] {
+        width:30rem;
+    }
+}
+@media screen and  (min-width:1310px){
+    
+    #navBarSearchForm input[type=search] {
+        width:40rem;
+    }
+}
+@media screen and  (min-width:1441px){
+    
+    #navBarSearchForm input[type=search] {
+        width:50rem;
+    }
 }
 
 
@@ -40,6 +60,9 @@ a:focus {
     margin-bottom: 40px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
     font-size: 14px;
+}
+.navbar-css{
+    height: 110px!important;
 }
 
 .navbar-btn {
@@ -207,7 +230,7 @@ ul ul a {
 
 #content {
     width: 100%;
-    min-height: 100vh;
+    
     transition: all 0.3s;
     position: absolute;
     top: 0;
@@ -220,11 +243,15 @@ ul ul a {
     MEDIA QUERIES
 ----------------------------------------------------- */
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 991px) {
     #navBarSearchForm input[type=search] {
         display: none;
     }
     .navbar-custom{
         display: none;
+    }
+    body{
+        margin-top: 100px;
+        padding: 0px 10px;
     }
   }
