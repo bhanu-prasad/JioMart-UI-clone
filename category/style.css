@@ -257,3 +257,7 @@ ul ul a {
   .nav-logo{
       height: 35px!important;
   }
+
+  .active{
+      background-color: #0000003a;
+  }
