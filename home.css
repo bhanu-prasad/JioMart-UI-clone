@@ -1,10 +1,11 @@
+
+
 body{
-  margin-top: 150px;
-  max-width: 100vw;
+  margin-top: 250px;
   overflow-x: hidden;
 }
 .space{
-  margin-left: 20px;
+  margin-left: 20px
 }
 .dash{
   text-decoration : line-through;
@@ -21,7 +22,31 @@ body{
 .card23{
   background: #caf7e3;
 }
+.ad{
+  width: 98%;
+}
+.c{
+  width: 100%
+}
+.img-responsive{
+  width: 100%;
+}
+.badge {
+
+top: 15px; left: 19px; font-size:13px; position:absolute;
+}
+.aj{
+  width : 100%;
+}
+
 
 .active{
 background:rgba(0, 0, 0, 0.178);
+}
+
+
+@media screen and (max-width:991px) {
+  .hideInmob{
+    display: none;
+  }
 }
